@@ -1,0 +1,29 @@
+{
+  "name": "nodecrud",
+  "version": "1.0.0",
+  "description": "exemplo de projeto com nodejs + express + mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavo-diniz/nodeCrud.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Gustavo Diniz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavo-diniz/nodeCrud/issues"
+  },
+  "homepage": "https://github.com/gustavo-diniz/nodeCrud#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-load": "^1.1.16",
+    "nodemon": "^1.14.11"
+  }
+}
