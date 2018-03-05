@@ -1,8 +1,8 @@
-var dbConnection = require('../infra/dbConnection');
+//var dbConnection = require('../infra/dbConnection');
 
 module.exports = function (app) {
-    
-    function _excluirCliente(clienteExclusao, res){
+
+    function _excluirCliente(clienteExclusao, res) {
         var connection = app.infra.DbConnection();
         var clientesDAO = new app.infra.ClientesDAO(connection);
         clientesDAO.excluir(clienteExclusao, function (erros, resultados) {
@@ -11,10 +11,10 @@ module.exports = function (app) {
                 code: 200
             });
         })
-        
+
         connection.end();
     };
-    
+
     app.get("/teste", function (req, res) {
         res.json({
             message: 'Ola node!',
@@ -68,7 +68,7 @@ module.exports = function (app) {
                     message: 'Erro ao inserir registro !',
                     code: 200
                 });
-                
+
             } else {
 
                 if (resultados != null && resultados.length > 0) {
@@ -83,11 +83,11 @@ module.exports = function (app) {
                     });
                 }
             }
-
+            <!-- TODO: -->
         });
 
         connection.end();
     });
-    
-    
+
+
 }
